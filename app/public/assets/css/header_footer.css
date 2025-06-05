@@ -1,0 +1,442 @@
+/* Estilos para Header e Footer */
+:root {
+  --primary-color: #2E7D32;
+  --secondary-color: #4CAF50;
+  --light-color: #C8E6C9;
+  --text-color: #333;
+  --white: #fff;
+<<<<<<< HEAD
+  --active-menu-color: #FFEB3B; /* Cor amarela para o item ativo, fácil de ver */
+=======
+>>>>>>> 321605f3475b9d5912aa6d786975baf2704d5e00
+}
+
+/* Header Styles */
+.main-header {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 1rem 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+<<<<<<< HEAD
+
+  /* REGRAS PARA CABEÇALHO FIXO */
+  position: fixed; /* Fixa o cabeçalho na tela */
+  top: 0;          /* Alinha ao topo */
+  width: 100%;     /* Garante que ocupe a largura total */
+  z-index: 1000;   /* Garante que fique acima de outros elementos ao rolar */
+=======
+>>>>>>> 321605f3475b9d5912aa6d786975baf2704d5e00
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+<<<<<<< HEAD
+  flex-direction: column; /* Coloca os itens (logo e nav-menu) em coluna */
+  align-items: center;    /* Centraliza os itens horizontalmente */
+=======
+  justify-content: space-between;
+  align-items: center;
+>>>>>>> 321605f3475b9d5912aa6d786975baf2704d5e00
+  padding: 0 2rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+<<<<<<< HEAD
+  margin-bottom: 1rem; /* Adiciona um espaço entre o logo e o menu */
+  text-align: center; /* Centraliza o texto do logo se ele for mais largo que o ícone */
+  width: 100%; /* Garante que o logo ocupe a largura total para centralização */
+=======
+>>>>>>> 321605f3475b9d5912aa6d786975baf2704d5e00
+}
+
+.logo a {
+  color: var(--white);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+<<<<<<< HEAD
+  justify-content: center; /* Centraliza o ícone e o texto dentro do link do logo */
+=======
+>>>>>>> 321605f3475b9d5912aa6d786975baf2704d5e00
+  gap: 0.5rem;
+}
+
+.logo i {
+  font-size: 2rem;
+}
+
+.nav-menu {
+  display: flex;
+<<<<<<< HEAD
+  /* Removido: justify-content: space-between; */ /* NÃO QUEREMOS ESPAÇO ENTRE AS EXTREMIDADES AQUI */
+  justify-content: center; /* CENTRALIZA TODOS OS ITENS DE NAVEGAÇÃO */
+  align-items: center; /* Centraliza itens verticalmente dentro do nav-menu */
+  flex-wrap: wrap; /* Permite que os itens quebrem a linha em telas menores */
+  width: 100%; /* Garante que o nav-menu ocupe a largura total */
+  gap: 2rem; /* Espaço entre os grupos de links */
+}
+
+/* Para garantir que os links 'Home', 'Sobre', 'Contato' fiquem juntos */
+.nav-menu .main-links {
+  display: flex;
+  gap: 2rem; /* Espaço entre os links principais */
+}
+
+/* Para garantir que os botões 'Login/Sair' e 'Cadastre-se' fiquem juntos na direita */
+.nav-menu .auth-buttons {
+  display: flex;
+  gap: 1rem; /* Espaço entre os botões */
+  /* NOVO: Para empurrar os botões para a direita, use margin-left: auto no container deles */
+  margin-left: auto;
+}
+
+
+=======
+  gap: 2rem;
+}
+
+>>>>>>> 321605f3475b9d5912aa6d786975baf2704d5e00
+.nav-menu a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+<<<<<<< HEAD
+  white-space: nowrap; /* Impede que o texto do link quebre a linha */
+=======
+>>>>>>> 321605f3475b9d5912aa6d786975baf2704d5e00
+}
+
+.nav-menu a:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+<<<<<<< HEAD
+/* Estilo para o item de menu ativo */
+.nav-menu a.active {
+  background-color: var(--active-menu-color); /* Cor de fundo para o item ativo */
+  color: var(--primary-color); /* Cor do texto para o item ativo */
+  font-weight: bold;
+}
+
+/* Ajustes para os botões de login/cadastro e sair */
+.btn-login,
+.btn-register,
+.btn-logout { 
+  background-color: var(--secondary-color); /* Mesma cor para todos os botões */
+  color: var(--white); /* Texto branco para todos os botões */
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap; /* Garante que o texto não quebre */
+}
+
+.btn-login:hover,
+.btn-register:hover,
+.btn-logout:hover { 
+  background-color: var(--primary-color); /* Mesmo hover para todos os botões */
+  color: var(--white); /* Garante que o texto permaneça branco no hover */
+}
+
+
+/* Estilos para o conteúdo principal */
+/* MUITO IMPORTANTE: ADICIONAR UM PADDING-TOP PARA COMPENSAR O CABEÇALHO FIXO */
+.main-content {
+  min-height: calc(100vh - 200px);
+  padding: 2rem 0; /* Padding existente */
+  padding-top: 180px; /* Ajuste este valor se o conteúdo ainda ficar por baixo do cabeçalho */
+=======
+.btn-login {
+  background-color: var(--secondary-color);
+  padding: 0.5rem 1.5rem;
+}
+
+/* Footer Styles */
+.main-footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 3rem 0 1.5rem;
+  margin-top: 3rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.footer-section h3 {
+  border-bottom: 2px solid var(--light-color);
+  padding-bottom: 0.8rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+  color: var(--light-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.social-links a {
+  color: var(--white);
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--light-color);
+  transform: translateY(-3px);
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.9rem;
+}
+
+/* Estilos para o conteúdo principal */
+.main-content {
+  min-height: calc(100vh - 200px);
+  padding: 2rem 0;
+>>>>>>> 321605f3475b9d5912aa6d786975baf2704d5e00
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.hero-banner {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+
+.hero-banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-banner p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.products-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.product-image {
+  height: 200px;
+  background: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.no-image {
+  color: #ccc;
+  font-size: 3rem;
+}
+
+.product-info {
+  padding: 1.5rem;
+}
+
+.product-info h3 {
+  margin: 0 0 0.5rem;
+  color: var(--primary-color);
+}
+
+.product-price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin: 0.5rem 0;
+}
+
+.product-stock {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.btn-add-cart {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-add-cart:hover {
+  background-color: var(--primary-color);
+<<<<<<< HEAD
+}
+
+
+/* Footer Styles */
+.main-footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 3rem 0 1.5rem;
+  margin-top: 3rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.footer-section h3 {
+  border-bottom: 2px solid var(--light-color);
+  padding-bottom: 0.8rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+  color: var(--light-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.social-links a {
+  color: var(--white);
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--light-color);
+  transform: translateY(-3px);
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.9rem;
+=======
+>>>>>>> 321605f3475b9d5912aa6d786975baf2704d5e00
+}
