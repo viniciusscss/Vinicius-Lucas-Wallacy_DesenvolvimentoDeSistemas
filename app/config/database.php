@@ -3,7 +3,7 @@ function getConnection() {
     $host = 'localhost';
     $dbname = 'hortifruti_bd';
     $user = 'root';
-    $pass = '1234'; 
+    $pass = ''; 
 
     try {
         $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $pass);

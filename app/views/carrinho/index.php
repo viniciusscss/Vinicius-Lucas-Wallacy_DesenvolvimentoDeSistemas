@@ -38,7 +38,7 @@
                     <span>Total dos Produtos:</span>
                     <span class="total-price">R$ <?= number_format($totalCarrinho, 2, ',', '.') ?></span>
                 </div>
-                <button class="btn btn-success btn-block">Finalizar Compra</button>
+                <a href="?controller=Checkout&action=index" class="btn btn-success btn-block">Finalizar Compra</a>
             </div>
         </div>
     <?php endif; ?>

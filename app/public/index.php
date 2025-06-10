@@ -36,7 +36,8 @@ $allowedControllers = [
     'Cliente',
     'Funcionario',
     'Pedido',
-    'Carrinho' // <-- ADICIONE ESTA LINHA
+    'Carrinho',
+    'Checkout' 
 ];
 
 if (in_array($controller, $allowedControllers) && class_exists($controllerClass)) {
