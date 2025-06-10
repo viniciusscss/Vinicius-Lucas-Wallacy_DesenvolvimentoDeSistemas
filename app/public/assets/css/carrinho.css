@@ -1,0 +1,121 @@
+.cart-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cart-empty-message {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cart-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.cart-items {
+    flex: 3;
+    min-width: 300px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+}
+
+.cart-item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+}
+
+.cart-item-details h2 {
+    font-size: 1.2rem;
+    margin: 0 0 0.5rem 0;
+}
+.cart-item-details .price {
+    font-weight: bold;
+    color: #28a745;
+}
+ .cart-item-details .stock {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.cart-quantity-form {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.cart-item-quantity {
+    width: 60px;
+    padding: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.cart-item-subtotal {
+    text-align: right;
+}
+
+.cart-item-subtotal p{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.cart-item-remove {
+    color: #dc3545;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+.cart-item-remove:hover {
+    text-decoration: underline;
+}
+
+.cart-summary {
+    flex: 1;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    height: fit-content; /* Para que a caixa não se estique */
+}
+
+.cart-summary h2 {
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+.summary-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.total-price {
+    font-weight: bold;
+    color: #28a745;
+}
+
+.btn-block {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+}
